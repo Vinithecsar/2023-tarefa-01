@@ -20,7 +20,7 @@ const ItensDaLista = () => {
     <>
       {lista.map((lista, index) =>
         <li role="presentation" className={`nav-item ${lista.classname}`}>
-          <a href="#" className="nav-link">{lista.titulo}</a>
+          <a href="#" className="nav-link">{lista.titulo} - {index}</a>
         </li>
       )}
     </>
@@ -52,7 +52,7 @@ const ListaToDo = () => {
           <div className="checker">
             <span><input type="checkbox" /></span>
           </div>
-          <span> {nome}</span>
+          <span> {nome} - {index} </span>
           <a href="javascript:void(0);" className="float-right remove-todo-item"><i className="icon-close"></i></a>
         </div>
       )}
