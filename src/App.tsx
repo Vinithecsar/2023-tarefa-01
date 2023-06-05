@@ -18,9 +18,9 @@ const ItensDaLista = () => {
 
   return (
     <>
-      {lista.map((lista, index) =>
+      {lista.map((lista) =>
         <li role="presentation" className={`nav-item ${lista.classname}`}>
-          <a href="#" className="nav-link">{lista.titulo} - {index}</a>
+          <a href="#" className="nav-link">{lista.titulo}</a>
         </li>
       )}
     </>
@@ -39,7 +39,7 @@ const BarraPesquisa = () => {
 }
 
 const ListaToDo = () => {
-  let lista = [
+  let tarefas = [
     "Create theme",
     "Work on wordpress",
     "Organize office main department",
@@ -47,12 +47,12 @@ const ListaToDo = () => {
   ];
   return (
     <>
-      {lista.map((nome, index) =>
+      {tarefas.map((nome) =>
         <div className="todo-item">
           <div className="checker">
             <span><input type="checkbox" /></span>
           </div>
-          <span> {nome} - {index} </span>
+          <span> {nome}</span>
           <a href="javascript:void(0);" className="float-right remove-todo-item"><i className="icon-close"></i></a>
         </div>
       )}
